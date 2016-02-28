@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		ADE24FA01C8279C800D88930 /* WRAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE24F9F1C8279C800D88930 /* WRAppDelegate.swift */; };
-		ADE24FA21C8279C800D88930 /* WRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE24FA11C8279C800D88930 /* WRViewController.swift */; };
+		ADE24FA01C8279C800D88930 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE24F9F1C8279C800D88930 /* AppDelegate.swift */; };
+		ADE24FA21C8279C800D88930 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE24FA11C8279C800D88930 /* ViewController.swift */; };
 		ADE24FA51C8279C800D88930 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADE24FA31C8279C800D88930 /* Main.storyboard */; };
 		ADE24FA71C8279C800D88930 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADE24FA61C8279C800D88930 /* Assets.xcassets */; };
 		ADE24FAA1C8279C800D88930 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADE24FA81C8279C800D88930 /* LaunchScreen.storyboard */; };
@@ -16,8 +16,10 @@
 		ADE24FB51C8279C800D88930 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADE24FB31C8279C800D88930 /* Interface.storyboard */; };
 		ADE24FB71C8279C800D88930 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADE24FB61C8279C800D88930 /* Assets.xcassets */; };
 		ADE24FBE1C8279C800D88930 /* WatchReminders WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = ADE24FBD1C8279C800D88930 /* WatchReminders WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		ADE24FC51C8279C800D88930 /* WRExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE24FC41C8279C800D88930 /* WRExtensionDelegate.swift */; };
+		ADE24FC51C8279C800D88930 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE24FC41C8279C800D88930 /* ExtensionDelegate.swift */; };
 		ADE24FC71C8279C800D88930 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADE24FC61C8279C800D88930 /* Assets.xcassets */; };
+		ADE24FD71C82873600D88930 /* ListsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE24FD61C82873600D88930 /* ListsInterfaceController.swift */; };
+		ADE24FD91C82887600D88930 /* ListRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE24FD81C82887600D88930 /* ListRowController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,8 +66,8 @@
 
 /* Begin PBXFileReference section */
 		ADE24F9C1C8279C800D88930 /* WatchReminders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchReminders.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		ADE24F9F1C8279C800D88930 /* WRAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WRAppDelegate.swift; sourceTree = "<group>"; };
-		ADE24FA11C8279C800D88930 /* WRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WRViewController.swift; sourceTree = "<group>"; };
+		ADE24F9F1C8279C800D88930 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ADE24FA11C8279C800D88930 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		ADE24FA41C8279C800D88930 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ADE24FA61C8279C800D88930 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADE24FA91C8279C800D88930 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -75,9 +77,11 @@
 		ADE24FB61C8279C800D88930 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADE24FB81C8279C800D88930 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ADE24FBD1C8279C800D88930 /* WatchReminders WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WatchReminders WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		ADE24FC41C8279C800D88930 /* WRExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WRExtensionDelegate.swift; sourceTree = "<group>"; };
+		ADE24FC41C8279C800D88930 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		ADE24FC61C8279C800D88930 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADE24FC81C8279C800D88930 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADE24FD61C82873600D88930 /* ListsInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListsInterfaceController.swift; sourceTree = "<group>"; };
+		ADE24FD81C82887600D88930 /* ListRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListRowController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,8 +125,8 @@
 		ADE24F9E1C8279C800D88930 /* WatchReminders */ = {
 			isa = PBXGroup;
 			children = (
-				ADE24F9F1C8279C800D88930 /* WRAppDelegate.swift */,
-				ADE24FA11C8279C800D88930 /* WRViewController.swift */,
+				ADE24F9F1C8279C800D88930 /* AppDelegate.swift */,
+				ADE24FA11C8279C800D88930 /* ViewController.swift */,
 				ADE24FA31C8279C800D88930 /* Main.storyboard */,
 				ADE24FA61C8279C800D88930 /* Assets.xcassets */,
 				ADE24FA81C8279C800D88930 /* LaunchScreen.storyboard */,
@@ -144,7 +148,9 @@
 		ADE24FC11C8279C800D88930 /* WatchReminders WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				ADE24FC41C8279C800D88930 /* WRExtensionDelegate.swift */,
+				ADE24FC41C8279C800D88930 /* ExtensionDelegate.swift */,
+				ADE24FD61C82873600D88930 /* ListsInterfaceController.swift */,
+				ADE24FD81C82887600D88930 /* ListRowController.swift */,
 				ADE24FC61C8279C800D88930 /* Assets.xcassets */,
 				ADE24FC81C8279C800D88930 /* Info.plist */,
 			);
@@ -286,8 +292,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADE24FA21C8279C800D88930 /* WRViewController.swift in Sources */,
-				ADE24FA01C8279C800D88930 /* WRAppDelegate.swift in Sources */,
+				ADE24FA21C8279C800D88930 /* ViewController.swift in Sources */,
+				ADE24FA01C8279C800D88930 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,7 +301,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADE24FC51C8279C800D88930 /* WRExtensionDelegate.swift in Sources */,
+				ADE24FD71C82873600D88930 /* ListsInterfaceController.swift in Sources */,
+				ADE24FC51C8279C800D88930 /* ExtensionDelegate.swift in Sources */,
+				ADE24FD91C82887600D88930 /* ListRowController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

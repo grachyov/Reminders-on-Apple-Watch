@@ -1,5 +1,5 @@
 //
-//  WRAppDelegate.swift
+//  ViewController.swift
 //  WatchReminders
 //
 //  Created by Ivan Grachev on 2/28/16.
@@ -7,11 +7,9 @@
 //
 
 import UIKit
+import EventKit
 
-@UIApplicationMain
-class WRAppDelegate: UIResponder, UIApplicationDelegate {
-
-    var window: UIWindow?
-
+class ViewController: UIViewController {
+    
 }
 

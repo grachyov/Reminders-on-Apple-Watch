@@ -1,5 +1,5 @@
 //
-//  WRViewController.swift
+//  AppDelegate.swift
 //  WatchReminders
 //
 //  Created by Ivan Grachev on 2/28/16.
@@ -8,7 +8,10 @@
 
 import UIKit
 
-class WRViewController: UIViewController {
+@UIApplicationMain
+class AppDelegate: UIResponder, UIApplicationDelegate {
+
+    var window: UIWindow?
 
 }
 
