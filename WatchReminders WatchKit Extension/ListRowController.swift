@@ -7,12 +7,19 @@
 //
 
 import WatchKit
+import EventKit
+
 
 class ListRowController: NSObject {
 
     @IBOutlet var titleLabel: WKInterfaceLabel!
     
-    func setupWithTitle(title: String) {
-        self.titleLabel.setText(title)
+    func setupWithCalendar(calendar: EKCalendar) {
+        titleLabel.setText(calendar.title)
+        titleLabel.setTextColor(UIColor(CGColor: calendar.CGColor))
+    }
+    
+    func setupWithReminder(reminder: EKReminder) {
+        titleLabel.setText(reminder.title)
     }
 }

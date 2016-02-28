@@ -15,7 +15,7 @@
                                 <tableRow identifier="ListRow" id="ple-wN-DDs" customClass="ListRowController" customModule="WatchReminders_WatchKit_Extension">
                                     <group key="rootItem" width="1" height="0.0" alignment="left" id="JCG-5K-OyZ">
                                         <items>
-                                            <label alignment="center" verticalAlignment="center" text="gggggggggggggg" textAlignment="center" numberOfLines="0" id="1f7-Qh-fEk"/>
+                                            <label alignment="center" verticalAlignment="center" textAlignment="center" numberOfLines="0" id="1f7-Qh-fEk"/>
                                         </items>
                                         <edgeInsets key="margins" left="4" right="4" top="6" bottom="6"/>
                                     </group>
@@ -37,11 +37,31 @@
         <scene sceneID="HqD-3Z-Vep">
             <objects>
                 <controller identifier="Inside List" id="lyM-gP-Zsd" customClass="InsideListInterfaceController" customModule="WatchReminders_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" id="civ-Vb-lfb">
+                            <items>
+                                <tableRow identifier="ListRow" id="YZn-a7-NLm" customClass="ListRowController" customModule="WatchReminders_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" id="P9n-pq-4Ak">
+                                        <items>
+                                            <label alignment="center" verticalAlignment="center" textAlignment="center" numberOfLines="0" id="M7d-Mx-w7f"/>
+                                        </items>
+                                        <edgeInsets key="margins" left="4" right="4" top="6" bottom="6"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="titleLabel" destination="M7d-Mx-w7f" id="19B-eS-1bO"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
                     <menu key="menu" id="j3b-4v-fS5">
                         <items>
                             <menuItem title="Show completed" icon="more" id="QVQ-Yf-zMh"/>
                         </items>
                     </menu>
+                    <connections>
+                        <outlet property="remindersTable" destination="civ-Vb-lfb" id="ULB-0e-n9I"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="377" y="315"/>

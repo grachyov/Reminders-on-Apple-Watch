@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import EventKit
 
 class ViewController: UIViewController {
     
