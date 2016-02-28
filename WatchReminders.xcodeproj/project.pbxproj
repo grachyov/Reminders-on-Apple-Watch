@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		ADE24FA01C8279C800D88930 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE24F9F1C8279C800D88930 /* AppDelegate.swift */; };
-		ADE24FA21C8279C800D88930 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE24FA11C8279C800D88930 /* ViewController.swift */; };
+		ADE24FA01C8279C800D88930 /* WRAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE24F9F1C8279C800D88930 /* WRAppDelegate.swift */; };
+		ADE24FA21C8279C800D88930 /* WRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE24FA11C8279C800D88930 /* WRViewController.swift */; };
 		ADE24FA51C8279C800D88930 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADE24FA31C8279C800D88930 /* Main.storyboard */; };
 		ADE24FA71C8279C800D88930 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADE24FA61C8279C800D88930 /* Assets.xcassets */; };
 		ADE24FAA1C8279C800D88930 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADE24FA81C8279C800D88930 /* LaunchScreen.storyboard */; };
@@ -16,8 +16,7 @@
 		ADE24FB51C8279C800D88930 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADE24FB31C8279C800D88930 /* Interface.storyboard */; };
 		ADE24FB71C8279C800D88930 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADE24FB61C8279C800D88930 /* Assets.xcassets */; };
 		ADE24FBE1C8279C800D88930 /* WatchReminders WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = ADE24FBD1C8279C800D88930 /* WatchReminders WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		ADE24FC31C8279C800D88930 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE24FC21C8279C800D88930 /* InterfaceController.swift */; };
-		ADE24FC51C8279C800D88930 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE24FC41C8279C800D88930 /* ExtensionDelegate.swift */; };
+		ADE24FC51C8279C800D88930 /* WRExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE24FC41C8279C800D88930 /* WRExtensionDelegate.swift */; };
 		ADE24FC71C8279C800D88930 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADE24FC61C8279C800D88930 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -65,8 +64,8 @@
 
 /* Begin PBXFileReference section */
 		ADE24F9C1C8279C800D88930 /* WatchReminders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchReminders.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		ADE24F9F1C8279C800D88930 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ADE24FA11C8279C800D88930 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ADE24F9F1C8279C800D88930 /* WRAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WRAppDelegate.swift; sourceTree = "<group>"; };
+		ADE24FA11C8279C800D88930 /* WRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WRViewController.swift; sourceTree = "<group>"; };
 		ADE24FA41C8279C800D88930 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ADE24FA61C8279C800D88930 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADE24FA91C8279C800D88930 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -76,8 +75,7 @@
 		ADE24FB61C8279C800D88930 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADE24FB81C8279C800D88930 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ADE24FBD1C8279C800D88930 /* WatchReminders WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WatchReminders WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		ADE24FC21C8279C800D88930 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
-		ADE24FC41C8279C800D88930 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		ADE24FC41C8279C800D88930 /* WRExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WRExtensionDelegate.swift; sourceTree = "<group>"; };
 		ADE24FC61C8279C800D88930 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADE24FC81C8279C800D88930 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -123,8 +121,8 @@
 		ADE24F9E1C8279C800D88930 /* WatchReminders */ = {
 			isa = PBXGroup;
 			children = (
-				ADE24F9F1C8279C800D88930 /* AppDelegate.swift */,
-				ADE24FA11C8279C800D88930 /* ViewController.swift */,
+				ADE24F9F1C8279C800D88930 /* WRAppDelegate.swift */,
+				ADE24FA11C8279C800D88930 /* WRViewController.swift */,
 				ADE24FA31C8279C800D88930 /* Main.storyboard */,
 				ADE24FA61C8279C800D88930 /* Assets.xcassets */,
 				ADE24FA81C8279C800D88930 /* LaunchScreen.storyboard */,
@@ -146,8 +144,7 @@
 		ADE24FC11C8279C800D88930 /* WatchReminders WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				ADE24FC21C8279C800D88930 /* InterfaceController.swift */,
-				ADE24FC41C8279C800D88930 /* ExtensionDelegate.swift */,
+				ADE24FC41C8279C800D88930 /* WRExtensionDelegate.swift */,
 				ADE24FC61C8279C800D88930 /* Assets.xcassets */,
 				ADE24FC81C8279C800D88930 /* Info.plist */,
 			);
@@ -222,12 +219,15 @@
 				TargetAttributes = {
 					ADE24F9B1C8279C800D88930 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 8DXC3N7E7P;
 					};
 					ADE24FAD1C8279C800D88930 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 8DXC3N7E7P;
 					};
 					ADE24FBC1C8279C800D88930 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 8DXC3N7E7P;
 					};
 				};
 			};
@@ -286,8 +286,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADE24FA21C8279C800D88930 /* ViewController.swift in Sources */,
-				ADE24FA01C8279C800D88930 /* AppDelegate.swift in Sources */,
+				ADE24FA21C8279C800D88930 /* WRViewController.swift in Sources */,
+				ADE24FA01C8279C800D88930 /* WRAppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,8 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADE24FC51C8279C800D88930 /* ExtensionDelegate.swift in Sources */,
-				ADE24FC31C8279C800D88930 /* InterfaceController.swift in Sources */,
+				ADE24FC51C8279C800D88930 /* WRExtensionDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +426,7 @@
 		ADE24FCC1C8279C800D88930 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "WatchReminders WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.grachyov.WatchReminders.watchkitapp.watchkitextension;
@@ -441,6 +441,7 @@
 		ADE24FCD1C8279C800D88930 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "WatchReminders WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.grachyov.WatchReminders.watchkitapp.watchkitextension;
@@ -456,6 +457,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				IBSC_MODULE = WatchReminders_WatchKit_Extension;
 				INFOPLIST_FILE = "WatchReminders WatchKit App/Info.plist";
@@ -472,6 +474,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				IBSC_MODULE = WatchReminders_WatchKit_Extension;
 				INFOPLIST_FILE = "WatchReminders WatchKit App/Info.plist";
@@ -488,6 +491,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = WatchReminders/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.grachyov.WatchReminders;
@@ -499,6 +503,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = WatchReminders/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.grachyov.WatchReminders;
