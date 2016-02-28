@@ -20,6 +20,8 @@
 		ADE24FC71C8279C800D88930 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADE24FC61C8279C800D88930 /* Assets.xcassets */; };
 		ADE24FD71C82873600D88930 /* ListsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE24FD61C82873600D88930 /* ListsInterfaceController.swift */; };
 		ADE24FD91C82887600D88930 /* ListRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE24FD81C82887600D88930 /* ListRowController.swift */; };
+		ADE24FDB1C8295BA00D88930 /* InsideListInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE24FDA1C8295BA00D88930 /* InsideListInterfaceController.swift */; };
+		ADE24FDD1C8295D500D88930 /* ReminderInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE24FDC1C8295D500D88930 /* ReminderInterfaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +84,8 @@
 		ADE24FC81C8279C800D88930 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ADE24FD61C82873600D88930 /* ListsInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListsInterfaceController.swift; sourceTree = "<group>"; };
 		ADE24FD81C82887600D88930 /* ListRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListRowController.swift; sourceTree = "<group>"; };
+		ADE24FDA1C8295BA00D88930 /* InsideListInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsideListInterfaceController.swift; sourceTree = "<group>"; };
+		ADE24FDC1C8295D500D88930 /* ReminderInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReminderInterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +153,8 @@
 			isa = PBXGroup;
 			children = (
 				ADE24FC41C8279C800D88930 /* ExtensionDelegate.swift */,
+				ADE24FDA1C8295BA00D88930 /* InsideListInterfaceController.swift */,
+				ADE24FDC1C8295D500D88930 /* ReminderInterfaceController.swift */,
 				ADE24FD61C82873600D88930 /* ListsInterfaceController.swift */,
 				ADE24FD81C82887600D88930 /* ListRowController.swift */,
 				ADE24FC61C8279C800D88930 /* Assets.xcassets */,
@@ -304,6 +310,8 @@
 				ADE24FD71C82873600D88930 /* ListsInterfaceController.swift in Sources */,
 				ADE24FC51C8279C800D88930 /* ExtensionDelegate.swift in Sources */,
 				ADE24FD91C82887600D88930 /* ListRowController.swift in Sources */,
+				ADE24FDD1C8295D500D88930 /* ReminderInterfaceController.swift in Sources */,
+				ADE24FDB1C8295BA00D88930 /* InsideListInterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

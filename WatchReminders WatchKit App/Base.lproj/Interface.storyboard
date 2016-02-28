@@ -15,9 +15,9 @@
                                 <tableRow identifier="ListRow" id="ple-wN-DDs" customClass="ListRowController" customModule="WatchReminders_WatchKit_Extension">
                                     <group key="rootItem" width="1" height="0.0" alignment="left" id="JCG-5K-OyZ">
                                         <items>
-                                            <label alignment="center" verticalAlignment="center" text="Label" id="1f7-Qh-fEk"/>
+                                            <label alignment="center" verticalAlignment="center" text="gggggggggggggg" textAlignment="center" numberOfLines="0" id="1f7-Qh-fEk"/>
                                         </items>
-                                        <edgeInsets key="margins" left="0.0" right="0.0" top="4" bottom="4"/>
+                                        <edgeInsets key="margins" left="4" right="4" top="6" bottom="6"/>
                                     </group>
                                     <connections>
                                         <outlet property="titleLabel" destination="1f7-Qh-fEk" id="Uee-54-fui"/>
@@ -31,6 +31,27 @@
                     </connections>
                 </controller>
             </objects>
+            <point key="canvasLocation" x="221" y="315"/>
+        </scene>
+        <!--Inside List-->
+        <scene sceneID="HqD-3Z-Vep">
+            <objects>
+                <controller identifier="Inside List" id="lyM-gP-Zsd" customClass="InsideListInterfaceController" customModule="WatchReminders_WatchKit_Extension">
+                    <menu key="menu" id="j3b-4v-fS5">
+                        <items>
+                            <menuItem title="Show completed" icon="more" id="QVQ-Yf-zMh"/>
+                        </items>
+                    </menu>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="377" y="315"/>
+        </scene>
+        <!--Reminder-->
+        <scene sceneID="336-N2-aN0">
+            <objects>
+                <controller identifier="Reminder" id="pl3-o3-m69" customClass="ReminderInterfaceController" customModule="WatchReminders_WatchKit_Extension"/>
+            </objects>
+            <point key="canvasLocation" x="543" y="315"/>
         </scene>
     </scenes>
 </document>

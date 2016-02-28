@@ -47,5 +47,8 @@ class ListsInterfaceController: WKInterfaceController {
         super.didDeactivate()
     }
 
+    override func table(table: WKInterfaceTable, didSelectRowAtIndex rowIndex: Int) {
+        pushControllerWithName("Inside List", context: nil)
+    }
     
 }
