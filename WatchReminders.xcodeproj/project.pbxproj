@@ -1,0 +1,548 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ADE24FA01C8279C800D88930 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE24F9F1C8279C800D88930 /* AppDelegate.swift */; };
+		ADE24FA21C8279C800D88930 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE24FA11C8279C800D88930 /* ViewController.swift */; };
+		ADE24FA51C8279C800D88930 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADE24FA31C8279C800D88930 /* Main.storyboard */; };
+		ADE24FA71C8279C800D88930 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADE24FA61C8279C800D88930 /* Assets.xcassets */; };
+		ADE24FAA1C8279C800D88930 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADE24FA81C8279C800D88930 /* LaunchScreen.storyboard */; };
+		ADE24FAF1C8279C800D88930 /* WatchReminders WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = ADE24FAE1C8279C800D88930 /* WatchReminders WatchKit App.app */; };
+		ADE24FB51C8279C800D88930 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADE24FB31C8279C800D88930 /* Interface.storyboard */; };
+		ADE24FB71C8279C800D88930 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADE24FB61C8279C800D88930 /* Assets.xcassets */; };
+		ADE24FBE1C8279C800D88930 /* WatchReminders WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = ADE24FBD1C8279C800D88930 /* WatchReminders WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		ADE24FC31C8279C800D88930 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE24FC21C8279C800D88930 /* InterfaceController.swift */; };
+		ADE24FC51C8279C800D88930 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE24FC41C8279C800D88930 /* ExtensionDelegate.swift */; };
+		ADE24FC71C8279C800D88930 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADE24FC61C8279C800D88930 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ADE24FB01C8279C800D88930 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADE24F941C8279C800D88930 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADE24FAD1C8279C800D88930;
+			remoteInfo = "WatchReminders WatchKit App";
+		};
+		ADE24FBF1C8279C800D88930 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADE24F941C8279C800D88930 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADE24FBC1C8279C800D88930;
+			remoteInfo = "WatchReminders WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		ADE24FCE1C8279C800D88930 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				ADE24FBE1C8279C800D88930 /* WatchReminders WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADE24FD21C8279C800D88930 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				ADE24FAF1C8279C800D88930 /* WatchReminders WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		ADE24F9C1C8279C800D88930 /* WatchReminders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchReminders.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADE24F9F1C8279C800D88930 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ADE24FA11C8279C800D88930 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ADE24FA41C8279C800D88930 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ADE24FA61C8279C800D88930 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ADE24FA91C8279C800D88930 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ADE24FAB1C8279C800D88930 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADE24FAE1C8279C800D88930 /* WatchReminders WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchReminders WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADE24FB41C8279C800D88930 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		ADE24FB61C8279C800D88930 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ADE24FB81C8279C800D88930 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADE24FBD1C8279C800D88930 /* WatchReminders WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WatchReminders WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADE24FC21C8279C800D88930 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		ADE24FC41C8279C800D88930 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		ADE24FC61C8279C800D88930 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ADE24FC81C8279C800D88930 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ADE24F991C8279C800D88930 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADE24FBA1C8279C800D88930 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ADE24F931C8279C800D88930 = {
+			isa = PBXGroup;
+			children = (
+				ADE24F9E1C8279C800D88930 /* WatchReminders */,
+				ADE24FB21C8279C800D88930 /* WatchReminders WatchKit App */,
+				ADE24FC11C8279C800D88930 /* WatchReminders WatchKit Extension */,
+				ADE24F9D1C8279C800D88930 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ADE24F9D1C8279C800D88930 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ADE24F9C1C8279C800D88930 /* WatchReminders.app */,
+				ADE24FAE1C8279C800D88930 /* WatchReminders WatchKit App.app */,
+				ADE24FBD1C8279C800D88930 /* WatchReminders WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ADE24F9E1C8279C800D88930 /* WatchReminders */ = {
+			isa = PBXGroup;
+			children = (
+				ADE24F9F1C8279C800D88930 /* AppDelegate.swift */,
+				ADE24FA11C8279C800D88930 /* ViewController.swift */,
+				ADE24FA31C8279C800D88930 /* Main.storyboard */,
+				ADE24FA61C8279C800D88930 /* Assets.xcassets */,
+				ADE24FA81C8279C800D88930 /* LaunchScreen.storyboard */,
+				ADE24FAB1C8279C800D88930 /* Info.plist */,
+			);
+			path = WatchReminders;
+			sourceTree = "<group>";
+		};
+		ADE24FB21C8279C800D88930 /* WatchReminders WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				ADE24FB31C8279C800D88930 /* Interface.storyboard */,
+				ADE24FB61C8279C800D88930 /* Assets.xcassets */,
+				ADE24FB81C8279C800D88930 /* Info.plist */,
+			);
+			path = "WatchReminders WatchKit App";
+			sourceTree = "<group>";
+		};
+		ADE24FC11C8279C800D88930 /* WatchReminders WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				ADE24FC21C8279C800D88930 /* InterfaceController.swift */,
+				ADE24FC41C8279C800D88930 /* ExtensionDelegate.swift */,
+				ADE24FC61C8279C800D88930 /* Assets.xcassets */,
+				ADE24FC81C8279C800D88930 /* Info.plist */,
+			);
+			path = "WatchReminders WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ADE24F9B1C8279C800D88930 /* WatchReminders */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADE24FD31C8279C800D88930 /* Build configuration list for PBXNativeTarget "WatchReminders" */;
+			buildPhases = (
+				ADE24F981C8279C800D88930 /* Sources */,
+				ADE24F991C8279C800D88930 /* Frameworks */,
+				ADE24F9A1C8279C800D88930 /* Resources */,
+				ADE24FD21C8279C800D88930 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ADE24FB11C8279C800D88930 /* PBXTargetDependency */,
+			);
+			name = WatchReminders;
+			productName = WatchReminders;
+			productReference = ADE24F9C1C8279C800D88930 /* WatchReminders.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ADE24FAD1C8279C800D88930 /* WatchReminders WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADE24FCF1C8279C800D88930 /* Build configuration list for PBXNativeTarget "WatchReminders WatchKit App" */;
+			buildPhases = (
+				ADE24FAC1C8279C800D88930 /* Resources */,
+				ADE24FCE1C8279C800D88930 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ADE24FC01C8279C800D88930 /* PBXTargetDependency */,
+			);
+			name = "WatchReminders WatchKit App";
+			productName = "WatchReminders WatchKit App";
+			productReference = ADE24FAE1C8279C800D88930 /* WatchReminders WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		ADE24FBC1C8279C800D88930 /* WatchReminders WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADE24FCB1C8279C800D88930 /* Build configuration list for PBXNativeTarget "WatchReminders WatchKit Extension" */;
+			buildPhases = (
+				ADE24FB91C8279C800D88930 /* Sources */,
+				ADE24FBA1C8279C800D88930 /* Frameworks */,
+				ADE24FBB1C8279C800D88930 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WatchReminders WatchKit Extension";
+			productName = "WatchReminders WatchKit Extension";
+			productReference = ADE24FBD1C8279C800D88930 /* WatchReminders WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ADE24F941C8279C800D88930 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Ivan Grachev";
+				TargetAttributes = {
+					ADE24F9B1C8279C800D88930 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					ADE24FAD1C8279C800D88930 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					ADE24FBC1C8279C800D88930 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = ADE24F971C8279C800D88930 /* Build configuration list for PBXProject "WatchReminders" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ADE24F931C8279C800D88930;
+			productRefGroup = ADE24F9D1C8279C800D88930 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ADE24F9B1C8279C800D88930 /* WatchReminders */,
+				ADE24FAD1C8279C800D88930 /* WatchReminders WatchKit App */,
+				ADE24FBC1C8279C800D88930 /* WatchReminders WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ADE24F9A1C8279C800D88930 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADE24FAA1C8279C800D88930 /* LaunchScreen.storyboard in Resources */,
+				ADE24FA71C8279C800D88930 /* Assets.xcassets in Resources */,
+				ADE24FA51C8279C800D88930 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADE24FAC1C8279C800D88930 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADE24FB71C8279C800D88930 /* Assets.xcassets in Resources */,
+				ADE24FB51C8279C800D88930 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADE24FBB1C8279C800D88930 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADE24FC71C8279C800D88930 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ADE24F981C8279C800D88930 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADE24FA21C8279C800D88930 /* ViewController.swift in Sources */,
+				ADE24FA01C8279C800D88930 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADE24FB91C8279C800D88930 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADE24FC51C8279C800D88930 /* ExtensionDelegate.swift in Sources */,
+				ADE24FC31C8279C800D88930 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ADE24FB11C8279C800D88930 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ADE24FAD1C8279C800D88930 /* WatchReminders WatchKit App */;
+			targetProxy = ADE24FB01C8279C800D88930 /* PBXContainerItemProxy */;
+		};
+		ADE24FC01C8279C800D88930 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ADE24FBC1C8279C800D88930 /* WatchReminders WatchKit Extension */;
+			targetProxy = ADE24FBF1C8279C800D88930 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ADE24FA31C8279C800D88930 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADE24FA41C8279C800D88930 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ADE24FA81C8279C800D88930 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADE24FA91C8279C800D88930 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		ADE24FB31C8279C800D88930 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADE24FB41C8279C800D88930 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ADE24FC91C8279C800D88930 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ADE24FCA1C8279C800D88930 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ADE24FCC1C8279C800D88930 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "WatchReminders WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.grachyov.WatchReminders.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		ADE24FCD1C8279C800D88930 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "WatchReminders WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.grachyov.WatchReminders.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		ADE24FD01C8279C800D88930 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = WatchReminders_WatchKit_Extension;
+				INFOPLIST_FILE = "WatchReminders WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.grachyov.WatchReminders.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		ADE24FD11C8279C800D88930 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = WatchReminders_WatchKit_Extension;
+				INFOPLIST_FILE = "WatchReminders WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.grachyov.WatchReminders.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		ADE24FD41C8279C800D88930 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WatchReminders/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.grachyov.WatchReminders;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		ADE24FD51C8279C800D88930 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WatchReminders/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.grachyov.WatchReminders;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ADE24F971C8279C800D88930 /* Build configuration list for PBXProject "WatchReminders" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADE24FC91C8279C800D88930 /* Debug */,
+				ADE24FCA1C8279C800D88930 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADE24FCB1C8279C800D88930 /* Build configuration list for PBXNativeTarget "WatchReminders WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADE24FCC1C8279C800D88930 /* Debug */,
+				ADE24FCD1C8279C800D88930 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		ADE24FCF1C8279C800D88930 /* Build configuration list for PBXNativeTarget "WatchReminders WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADE24FD01C8279C800D88930 /* Debug */,
+				ADE24FD11C8279C800D88930 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		ADE24FD31C8279C800D88930 /* Build configuration list for PBXNativeTarget "WatchReminders" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADE24FD41C8279C800D88930 /* Debug */,
+				ADE24FD51C8279C800D88930 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ADE24F941C8279C800D88930 /* Project object */;
+}
