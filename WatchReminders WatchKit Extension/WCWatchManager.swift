@@ -22,12 +22,19 @@ class WCWatchManager: NSObject, WCSessionDelegate {
         }
     }
     
+    func fetchScheduledReminders(completionHandler:(([Reminder]) -> Void)) {
+        sendRemindersRequest(MessageManager.scheduledRemindersRequest(), completionHandler: completionHandler)
+    }
+    
     func fetchRemindersInCalendar(calendar: EKCalendar, completionHandler:(([Reminder]) -> Void)) {
+        sendRemindersRequest(MessageManager.remindersRequestForCalendar(calendar), completionHandler: completionHandler)
+    }
+    
+    private func sendRemindersRequest(request: [String : AnyObject], completionHandler:(([Reminder]) -> Void)) {
         if !WCSession.isSupported() { return }
         let session = WCSession.defaultSession()
-        let message = MessageManager.remindersRequestForCalendar(calendar)
         if session.reachable {
-            session.sendMessage(message, replyHandler: { reply in
+            session.sendMessage(request, replyHandler: { reply in
                 if MessageManager.typeOfMessage(reply) == .RemindersReply {
                     completionHandler(MessageManager.remindersForReply(reply))
                 }

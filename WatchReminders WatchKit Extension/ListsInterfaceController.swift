@@ -40,9 +40,15 @@ class ListsInterfaceController: WKInterfaceController {
             if shouldUpdateInterface {
                 self.displayedCalendars = calendars
                 dispatch_async(dispatch_get_main_queue()) {
-                    self.listsTable.setNumberOfRows(calendars.count, withRowType: "ListRow")
-                    for i in 0..<calendars.count {
-                        (self.listsTable.rowControllerAtIndex(i) as! ListRowController).setupWithCalendar(calendars[i])
+                    self.listsTable.setNumberOfRows(calendars.count + 1, withRowType: "ListRow")
+                    for i in 0..<calendars.count + 1 {
+                        let rowController = self.listsTable.rowControllerAtIndex(i) as! ListRowController
+                        if i == 0 {
+                            rowController.setupForScheduled()
+                        }
+                        else {
+                            rowController.setupWithCalendar(calendars[i - 1])
+                        }
                     }
                 }
             }
@@ -50,7 +56,12 @@ class ListsInterfaceController: WKInterfaceController {
     }
 
     override func table(table: WKInterfaceTable, didSelectRowAtIndex rowIndex: Int) {
-        pushControllerWithName("Inside List", context: displayedCalendars[rowIndex])
+        if rowIndex == 0 {
+            pushControllerWithName("Inside List", context: Constants.scheduledContextString)
+        }
+        else {
+            pushControllerWithName("Inside List", context: displayedCalendars[rowIndex - 1])
+        }
     }
     
 }

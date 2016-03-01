@@ -21,6 +21,7 @@ extension NSUserDefaults {
 
 enum MessageType {
     case RemindersRequest
+    case ScheduledRemindersRequest
     case RemindersReply
     case None
 }
@@ -31,9 +32,15 @@ class MessageManager {
         return ["Type" : "RemindersRequest", "CalendarID" : calendar.calendarIdentifier]
     }
     
+    class func scheduledRemindersRequest() -> [String : AnyObject] {
+        return ["Type" : "ScheduledRemindersRequest"]
+    }
+    
     class func typeOfMessage(message: [String : AnyObject]) -> MessageType {
         guard let value = message["Type"] as? String else { return .None }
         switch value {
+            case "ScheduledRemindersRequest":
+                return .ScheduledRemindersRequest
             case "RemindersRequest":
                 return .RemindersRequest
             case "RemindersReply":

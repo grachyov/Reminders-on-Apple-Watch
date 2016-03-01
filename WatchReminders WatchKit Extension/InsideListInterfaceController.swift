@@ -14,17 +14,25 @@ import EventKit
 class InsideListInterfaceController: WKInterfaceController {
 
     @IBOutlet var remindersTable: WKInterfaceTable!
+    @IBOutlet var statusLabel: WKInterfaceLabel!
     
     var calendar: EKCalendar!
     var displayedReminders: [Reminder] = []
     
     override func awakeWithContext(context: AnyObject?) {
-        guard let calendar = context as? EKCalendar else {
-            popController()
-            return
+        if let calendar = context as? EKCalendar {
+            self.calendar = calendar
+            setTitle(calendar.title)
+            WCWatchManager.sharedManager.fetchRemindersInCalendar(calendar, completionHandler: reloadWithReminders)
         }
-        self.calendar = calendar
-        WCWatchManager.sharedManager.fetchRemindersInCalendar(calendar, completionHandler: reloadWithReminders)
+        else {
+            guard let _ = context as? String else {
+                popController()
+                return
+            }
+            setTitle("Scheduled")
+            WCWatchManager.sharedManager.fetchScheduledReminders(reloadWithReminders)
+        }
     }
     
     func reloadWithReminders(reminders: [Reminder]) {
@@ -32,6 +40,9 @@ class InsideListInterfaceController: WKInterfaceController {
         self.remindersTable.setNumberOfRows(reminders.count, withRowType: "ListRow")
         for i in 0..<reminders.count {
             (self.remindersTable.rowControllerAtIndex(i) as! ListRowController).setupWithReminder(reminders[i])
+        }
+        if reminders.count == 0 {
+            self.statusLabel.setHidden(false)
         }
     }
     

@@ -15,9 +15,9 @@
                                 <tableRow identifier="ListRow" id="ple-wN-DDs" customClass="ListRowController" customModule="WatchReminders_WatchKit_Extension">
                                     <group key="rootItem" width="1" height="0.0" alignment="left" id="JCG-5K-OyZ">
                                         <items>
-                                            <label alignment="center" verticalAlignment="center" textAlignment="center" numberOfLines="0" id="1f7-Qh-fEk"/>
+                                            <label alignment="center" verticalAlignment="center" text="                                                                                 " textAlignment="center" numberOfLines="0" id="1f7-Qh-fEk"/>
                                         </items>
-                                        <edgeInsets key="margins" left="4" right="4" top="6" bottom="6"/>
+                                        <edgeInsets key="margins" left="4" right="4" top="7" bottom="7"/>
                                     </group>
                                     <connections>
                                         <outlet property="titleLabel" destination="1f7-Qh-fEk" id="Uee-54-fui"/>
@@ -43,9 +43,9 @@
                                 <tableRow identifier="ListRow" id="YZn-a7-NLm" customClass="ListRowController" customModule="WatchReminders_WatchKit_Extension">
                                     <group key="rootItem" width="1" height="0.0" alignment="left" id="P9n-pq-4Ak">
                                         <items>
-                                            <label alignment="center" verticalAlignment="center" textAlignment="center" numberOfLines="0" id="M7d-Mx-w7f"/>
+                                            <label alignment="center" verticalAlignment="center" text="                                                                                 " textAlignment="center" numberOfLines="0" id="M7d-Mx-w7f"/>
                                         </items>
-                                        <edgeInsets key="margins" left="4" right="4" top="6" bottom="6"/>
+                                        <edgeInsets key="margins" left="4" right="4" top="7" bottom="7"/>
                                     </group>
                                     <connections>
                                         <outlet property="titleLabel" destination="M7d-Mx-w7f" id="19B-eS-1bO"/>
@@ -53,6 +53,7 @@
                                 </tableRow>
                             </items>
                         </table>
+                        <label width="0.90000000000000002" alignment="center" verticalAlignment="center" hidden="YES" text="No reminders" textAlignment="center" numberOfLines="2" id="09a-pE-tq8"/>
                     </items>
                     <menu key="menu" id="j3b-4v-fS5">
                         <items>
@@ -61,6 +62,7 @@
                     </menu>
                     <connections>
                         <outlet property="remindersTable" destination="civ-Vb-lfb" id="ULB-0e-n9I"/>
+                        <outlet property="statusLabel" destination="09a-pE-tq8" id="ZVo-id-qOW"/>
                     </connections>
                 </controller>
             </objects>
