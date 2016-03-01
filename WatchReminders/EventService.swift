@@ -52,7 +52,9 @@ class EventService: NSObject {
             return
         }
         let store = EKEventStore()
-        let predicate = store.predicateForRemindersInCalendars([calendar])
+        let predicate = store.predicateForIncompleteRemindersWithDueDateStarting(nil,
+            ending: nil,
+            calendars: [calendar])
         store.fetchRemindersMatchingPredicate(predicate) { (reminders) -> Void in
             guard let reminders = reminders else { return }
             completionHandler(reminders)
