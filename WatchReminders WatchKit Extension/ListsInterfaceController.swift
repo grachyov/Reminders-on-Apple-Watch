@@ -26,12 +26,24 @@ class ListsInterfaceController: WKInterfaceController {
     override func willActivate() {
         super.willActivate()
         EventService.sharedService.fetchLists { [unowned self] calendars in
-            //TODO: refresh only if displayed data is different
-            self.displayedCalendars = calendars
-            dispatch_async(dispatch_get_main_queue()) {
-                self.listsTable.setNumberOfRows(calendars.count, withRowType: "ListRow")
-                for i in 0..<calendars.count {
-                    (self.listsTable.rowControllerAtIndex(i) as! ListRowController).setupWithCalendar(calendars[i])
+            let displayedIDs = self.displayedCalendars.map { $0.title }
+            let newIDs = calendars.map { $0.title }
+            var shouldUpdateInterface = displayedIDs.count != newIDs.count
+            if !shouldUpdateInterface {
+                for calendar in calendars {
+                    if !self.displayedCalendars.contains(calendar) {
+                        shouldUpdateInterface = true
+                        break
+                    }
+                }
+            }
+            if shouldUpdateInterface {
+                self.displayedCalendars = calendars
+                dispatch_async(dispatch_get_main_queue()) {
+                    self.listsTable.setNumberOfRows(calendars.count, withRowType: "ListRow")
+                    for i in 0..<calendars.count {
+                        (self.listsTable.rowControllerAtIndex(i) as! ListRowController).setupWithCalendar(calendars[i])
+                    }
                 }
             }
         }
