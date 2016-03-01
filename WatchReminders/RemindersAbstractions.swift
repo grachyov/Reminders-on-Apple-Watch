@@ -18,3 +18,25 @@ extension NSUserDefaults {
         }
     }
 }
+
+enum MessageType {
+    case RemindersRequest
+    case None
+}
+
+class MessageManager {
+    
+    class func remindersRequest() -> [String : AnyObject] {
+        return ["Request" : "Reminders"]
+    }
+    
+    class func typeOfMessage(message: [String : AnyObject]) -> MessageType {
+        guard let value = message["Request"] as? String else { return .None }
+        if value == "Reminders" {
+            return .RemindersRequest
+        }
+        else {
+            return .None
+        }
+    }
+}

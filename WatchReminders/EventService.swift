@@ -14,6 +14,7 @@ class EventService: NSObject {
     static let sharedService = EventService()
     
     func requestAccess() {
+        //TODO: протягивать в реквест доступа completion handler
         let store = EKEventStore()
         store.requestAccessToEntityType(.Reminder) { [unowned self] (granted, error) -> Void in
             if granted {

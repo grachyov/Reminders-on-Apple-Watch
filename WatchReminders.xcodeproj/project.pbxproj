@@ -11,6 +11,8 @@
 		AD9C1A981C82F74000EB8759 /* EventService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9C1A961C82F72800EB8759 /* EventService.swift */; };
 		AD9C1A9A1C82FB0E00EB8759 /* RemindersAbstractions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9C1A991C82FB0E00EB8759 /* RemindersAbstractions.swift */; };
 		AD9C1A9B1C82FB0E00EB8759 /* RemindersAbstractions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9C1A991C82FB0E00EB8759 /* RemindersAbstractions.swift */; };
+		ADBAF3A41C84AE9000868234 /* WCIphoneManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBAF3A31C84AE9000868234 /* WCIphoneManager.swift */; };
+		ADBAF3A61C84AEB100868234 /* WCWatchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBAF3A51C84AEB100868234 /* WCWatchManager.swift */; };
 		ADE24FA01C8279C800D88930 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE24F9F1C8279C800D88930 /* AppDelegate.swift */; };
 		ADE24FA21C8279C800D88930 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE24FA11C8279C800D88930 /* ViewController.swift */; };
 		ADE24FA51C8279C800D88930 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADE24FA31C8279C800D88930 /* Main.storyboard */; };
@@ -73,6 +75,8 @@
 /* Begin PBXFileReference section */
 		AD9C1A961C82F72800EB8759 /* EventService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventService.swift; sourceTree = "<group>"; };
 		AD9C1A991C82FB0E00EB8759 /* RemindersAbstractions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemindersAbstractions.swift; sourceTree = "<group>"; };
+		ADBAF3A31C84AE9000868234 /* WCIphoneManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WCIphoneManager.swift; sourceTree = "<group>"; };
+		ADBAF3A51C84AEB100868234 /* WCWatchManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WCWatchManager.swift; sourceTree = "<group>"; };
 		ADE24F9C1C8279C800D88930 /* WatchReminders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchReminders.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADE24F9F1C8279C800D88930 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADE24FA11C8279C800D88930 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -148,6 +152,7 @@
 			children = (
 				ADE24F9F1C8279C800D88930 /* AppDelegate.swift */,
 				ADE24FA11C8279C800D88930 /* ViewController.swift */,
+				ADBAF3A31C84AE9000868234 /* WCIphoneManager.swift */,
 				ADE24FA31C8279C800D88930 /* Main.storyboard */,
 				ADE24FA61C8279C800D88930 /* Assets.xcassets */,
 				ADE24FA81C8279C800D88930 /* LaunchScreen.storyboard */,
@@ -171,6 +176,7 @@
 			children = (
 				ADE24FC41C8279C800D88930 /* ExtensionDelegate.swift */,
 				ADE24FDA1C8295BA00D88930 /* InsideListInterfaceController.swift */,
+				ADBAF3A51C84AEB100868234 /* WCWatchManager.swift */,
 				ADE24FDC1C8295D500D88930 /* ReminderInterfaceController.swift */,
 				ADE24FD61C82873600D88930 /* ListsInterfaceController.swift */,
 				ADE24FD81C82887600D88930 /* ListRowController.swift */,
@@ -315,6 +321,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADBAF3A41C84AE9000868234 /* WCIphoneManager.swift in Sources */,
 				AD9C1A9A1C82FB0E00EB8759 /* RemindersAbstractions.swift in Sources */,
 				AD9C1A971C82F72800EB8759 /* EventService.swift in Sources */,
 				ADE24FA21C8279C800D88930 /* ViewController.swift in Sources */,
@@ -329,6 +336,7 @@
 				AD9C1A981C82F74000EB8759 /* EventService.swift in Sources */,
 				ADE24FD71C82873600D88930 /* ListsInterfaceController.swift in Sources */,
 				ADE24FC51C8279C800D88930 /* ExtensionDelegate.swift in Sources */,
+				ADBAF3A61C84AEB100868234 /* WCWatchManager.swift in Sources */,
 				ADE24FD91C82887600D88930 /* ListRowController.swift in Sources */,
 				ADE24FDD1C8295D500D88930 /* ReminderInterfaceController.swift in Sources */,
 				AD9C1A9B1C82FB0E00EB8759 /* RemindersAbstractions.swift in Sources */,

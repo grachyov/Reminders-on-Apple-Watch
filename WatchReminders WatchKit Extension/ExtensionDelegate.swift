@@ -10,4 +10,9 @@ import WatchKit
 
 class ExtensionDelegate: NSObject, WKExtensionDelegate {
 
+    override init() {
+        super.init()
+        WCWatchManager.sharedManager.setupSession()
+    }
+    
 }
