@@ -19,7 +19,7 @@ class ListRowController: NSObject {
         titleLabel.setTextColor(UIColor(CGColor: calendar.CGColor))
     }
     
-    func setupWithReminder(reminder: EKReminder) {
+    func setupWithReminder(reminder: Reminder) {
         titleLabel.setText(reminder.title)
     }
 }

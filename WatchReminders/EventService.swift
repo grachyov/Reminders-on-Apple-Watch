@@ -34,6 +34,18 @@ class EventService: NSObject {
         completionHandler(EKEventStore().calendarsForEntityType(.Reminder))
     }
     
+    func fetchRemindersInCalendarWithID(calendarID: String, completionHandler:(([EKReminder]) -> Void)) {
+        if !NSUserDefaults.standardUserDefaults().accessGranted {
+            requestAccess()
+            return
+        }
+        guard let calendar = EKEventStore().calendarWithIdentifier(calendarID) else {
+            //TODO:call failed completion handler
+            return
+        }
+        fetchRemindersInCalendar(calendar, completionHandler: completionHandler)
+    }
+    
     func fetchRemindersInCalendar(calendar: EKCalendar, completionHandler:(([EKReminder]) -> Void)) {
         if !NSUserDefaults.standardUserDefaults().accessGranted {
             requestAccess()

@@ -6,8 +6,9 @@
 //  Copyright © 2016 Ivan Grachev. All rights reserved.
 //
 
-import UIKit
 import WatchConnectivity
+import EventKit
+
 
 class WCIphoneManager: NSObject, WCSessionDelegate {
 
@@ -23,7 +24,12 @@ class WCIphoneManager: NSObject, WCSessionDelegate {
     
     func session(session: WCSession, didReceiveMessage message: [String : AnyObject], replyHandler: ([String : AnyObject]) -> Void) {
         if MessageManager.typeOfMessage(message) == .RemindersRequest {
-            
+            EventService.sharedService.fetchRemindersInCalendarWithID(MessageManager.calendarID(message)) { reminders in
+                let remindersTitles = reminders.map({ (reminder) -> String in
+                    return reminder.title
+                })
+                replyHandler(MessageManager.replyRemindersMessage(remindersTitles))
+            }
         }
     }
     
