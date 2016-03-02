@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,24 +18,91 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WatchScreenshot" translatesAutoresizingMaskIntoConstraints="NO" id="1ee-Lt-LCS">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="291" id="2zo-0j-dRV"/>
+                                    <constraint firstAttribute="width" constant="246" id="JSP-Yr-Xkg"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="2zo-0j-dRV"/>
+                                        <exclude reference="JSP-Yr-Xkg"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="2zo-0j-dRV"/>
+                                        <include reference="JSP-Yr-Xkg"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reminders on Watch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jcr-zd-vcw">
                                 <rect key="frame" x="222" y="28" width="156" height="20"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View all lists and items from built-in Reminders app on your Apple Watch" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eR4-sF-aWK">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.23137254901960785" green="0.23137254901960785" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="jcr-zd-vcw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="FS0-l1-6pj"/>
+                            <constraint firstItem="1ee-Lt-LCS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="196-dn-d3p">
+                                <variation key="heightClass=regular" constant="-50"/>
+                            </constraint>
+                            <constraint firstItem="eR4-sF-aWK" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1:2" id="DdY-3b-7Hi"/>
+                            <constraint firstItem="eR4-sF-aWK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YAb-M4-9kH"/>
+                            <constraint firstItem="1ee-Lt-LCS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dDb-jA-4Gc"/>
+                            <constraint firstItem="eR4-sF-aWK" firstAttribute="top" secondItem="1ee-Lt-LCS" secondAttribute="bottom" constant="43" id="irO-fM-ale">
+                                <variation key="heightClass=regular" constant="70"/>
+                            </constraint>
                             <constraint firstItem="jcr-zd-vcw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mEz-fd-NjI"/>
+                            <constraint firstItem="1ee-Lt-LCS" firstAttribute="top" secondItem="jcr-zd-vcw" secondAttribute="bottom" constant="51" id="mSe-AL-M3s">
+                                <variation key="heightClass=regular" constant="20"/>
+                            </constraint>
                         </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="1ee-Lt-LCS"/>
+                                <exclude reference="eR4-sF-aWK"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="196-dn-d3p"/>
+                                <exclude reference="dDb-jA-4Gc"/>
+                                <exclude reference="mSe-AL-M3s"/>
+                                <exclude reference="DdY-3b-7Hi"/>
+                                <exclude reference="YAb-M4-9kH"/>
+                                <exclude reference="irO-fM-ale"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="subviews">
+                                <include reference="1ee-Lt-LCS"/>
+                                <include reference="eR4-sF-aWK"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="196-dn-d3p"/>
+                                <include reference="dDb-jA-4Gc"/>
+                                <include reference="mSe-AL-M3s"/>
+                                <include reference="DdY-3b-7Hi"/>
+                                <include reference="YAb-M4-9kH"/>
+                                <include reference="irO-fM-ale"/>
+                            </mask>
+                        </variation>
                     </view>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-127" y="217"/>
+            <point key="canvasLocation" x="-145" y="173.25"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="WatchScreenshot" width="243" height="270"/>
+    </resources>
 </document>
