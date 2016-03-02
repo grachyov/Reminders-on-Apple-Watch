@@ -480,7 +480,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "WatchReminders WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.grachyov.WatchReminders.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.grachyov.RemindersOnWatch.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -495,7 +495,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "WatchReminders WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.grachyov.WatchReminders.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.grachyov.RemindersOnWatch.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -512,7 +512,7 @@
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				IBSC_MODULE = WatchReminders_WatchKit_Extension;
 				INFOPLIST_FILE = "WatchReminders WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.grachyov.WatchReminders.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.grachyov.RemindersOnWatch.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -529,7 +529,7 @@
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				IBSC_MODULE = WatchReminders_WatchKit_Extension;
 				INFOPLIST_FILE = "WatchReminders WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.grachyov.WatchReminders.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.grachyov.RemindersOnWatch.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -545,7 +545,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = WatchReminders/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.grachyov.WatchReminders;
+				PRODUCT_BUNDLE_IDENTIFIER = com.grachyov.RemindersOnWatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -557,7 +557,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = WatchReminders/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.grachyov.WatchReminders;
+				PRODUCT_BUNDLE_IDENTIFIER = com.grachyov.RemindersOnWatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

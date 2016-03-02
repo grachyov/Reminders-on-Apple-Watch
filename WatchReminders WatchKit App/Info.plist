@@ -28,7 +28,7 @@
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 	</array>
 	<key>WKCompanionAppBundleIdentifier</key>
-	<string>com.grachyov.WatchReminders</string>
+	<string>com.grachyov.RemindersOnWatch</string>
 	<key>WKWatchKitApp</key>
 	<true/>
 </dict>
