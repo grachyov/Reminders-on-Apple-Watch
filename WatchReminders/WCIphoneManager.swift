@@ -32,9 +32,11 @@ class WCIphoneManager: NSObject, WCSessionDelegate {
         }
         if messageType == .RemindersRequest {
             EventService.sharedService.fetchRemindersInCalendarWithID(MessageManager.calendarID(message), completionHandler: completionHandler)
+            AnalyticsHelper.sharedHelper.logRemindersListViewed(false)
         }
         else if messageType == .ScheduledRemindersRequest {
             EventService.sharedService.fetchScheduledReminders(completionHandler)
+            AnalyticsHelper.sharedHelper.logRemindersListViewed(true)
         }
     }
     

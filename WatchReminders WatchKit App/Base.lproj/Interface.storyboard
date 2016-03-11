@@ -55,11 +55,6 @@
                         </table>
                         <label width="0.90000000000000002" alignment="center" verticalAlignment="center" hidden="YES" text="No reminders" textAlignment="center" numberOfLines="2" id="09a-pE-tq8"/>
                     </items>
-                    <menu key="menu" id="j3b-4v-fS5">
-                        <items>
-                            <menuItem title="Show completed" icon="more" id="QVQ-Yf-zMh"/>
-                        </items>
-                    </menu>
                     <connections>
                         <outlet property="remindersTable" destination="civ-Vb-lfb" id="ULB-0e-n9I"/>
                         <outlet property="statusLabel" destination="09a-pE-tq8" id="ZVo-id-qOW"/>
