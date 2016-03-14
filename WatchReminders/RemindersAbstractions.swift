@@ -76,15 +76,15 @@ class MessageManager {
 }
 
 extension NSDate {
-    func prettyDescription() -> String {
+    func prettyDescriptionWithDate(withDate: Bool, withTime: Bool) -> String {
         let dateFormatter = NSDateFormatter()
-        dateFormatter.timeStyle = .ShortStyle
+        dateFormatter.dateStyle = withDate ? .ShortStyle : .NoStyle
+        dateFormatter.timeStyle = withTime ? .ShortStyle : .NoStyle
         if isToday() {
             dateFormatter.dateStyle = .NoStyle
-            return "Today " + dateFormatter.stringFromDate(self)
+            return "Today" + (withTime ? " " : "") + dateFormatter.stringFromDate(self)
         }
         else {
-            dateFormatter.dateStyle = .ShortStyle
             return dateFormatter.stringFromDate(self)
         }
     }
@@ -107,4 +107,19 @@ extension NSDate {
 struct Reminder {
     let title: String
     let dueDate: NSDate?
+    
+    var onlyDateString: String? {
+        guard let dueDate = dueDate else { return nil }
+        return dueDate.prettyDescriptionWithDate(true, withTime: false)
+    }
+    
+    var entireDateString: String? {
+        guard let dueDate = dueDate else { return nil }
+        return dueDate.prettyDescriptionWithDate(true, withTime: true)
+    }
+    
+    var onlyTimeString: String? {
+        guard let dueDate = dueDate else { return nil }
+        return dueDate.prettyDescriptionWithDate(false, withTime: true)
+    }
 }

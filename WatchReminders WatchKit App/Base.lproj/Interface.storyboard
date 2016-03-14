@@ -40,19 +40,24 @@
                     <items>
                         <table alignment="left" id="civ-Vb-lfb">
                             <items>
-                                <tableRow identifier="ListRow" id="YZn-a7-NLm" customClass="ListRowController" customModule="WatchReminders_WatchKit_Extension">
+                                <tableRow identifier="ListRow" selectable="NO" id="YZn-a7-NLm" customClass="ListRowController" customModule="WatchReminders_WatchKit_Extension">
                                     <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="P9n-pq-4Ak">
                                         <items>
                                             <label alignment="center" verticalAlignment="center" text="                                                                                 " textAlignment="center" numberOfLines="0" id="M7d-Mx-w7f"/>
+                                            <label alignment="center" verticalAlignment="center" hidden="YES" text="Today" textAlignment="center" numberOfLines="0" id="9H6-jD-1is">
+                                                <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                            </label>
                                             <label alignment="center" verticalAlignment="center" textAlignment="center" numberOfLines="0" id="m3E-St-YiL">
-                                                <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="font" type="system" pointSize="14"/>
                                             </label>
                                         </items>
                                         <edgeInsets key="margins" left="4" right="4" top="7" bottom="7"/>
                                     </group>
                                     <connections>
+                                        <outlet property="cellGroup" destination="P9n-pq-4Ak" id="wew-BI-OC2"/>
                                         <outlet property="dueDateLabel" destination="m3E-St-YiL" id="OVL-am-eXR"/>
+                                        <outlet property="headerDateLabel" destination="9H6-jD-1is" id="hwS-g7-xqI"/>
                                         <outlet property="titleLabel" destination="M7d-Mx-w7f" id="19B-eS-1bO"/>
                                     </connections>
                                 </tableRow>
