@@ -25,18 +25,16 @@ class WCIphoneManager: NSObject, WCSessionDelegate {
     func session(session: WCSession, didReceiveMessage message: [String : AnyObject], replyHandler: ([String : AnyObject]) -> Void) {
         let messageType = MessageManager.typeOfMessage(message)
         let completionHandler: [EKReminder] -> Void = { reminders in
-            let remindersTitles = reminders.map({ (reminder) -> String in
-                return reminder.title
+            let remindersStructs = reminders.map({ (reminder) -> Reminder in
+                return Reminder(title: reminder.title, dueDate: reminder.dueDateComponents?.date)
             })
-            replyHandler(MessageManager.replyRemindersMessage(remindersTitles))
+            replyHandler(MessageManager.replyRemindersMessage(remindersStructs))
         }
         if messageType == .RemindersRequest {
             EventService.sharedService.fetchRemindersInCalendarWithID(MessageManager.calendarID(message), completionHandler: completionHandler)
-            AnalyticsHelper.sharedHelper.logRemindersListViewed(false)
         }
         else if messageType == .ScheduledRemindersRequest {
             EventService.sharedService.fetchScheduledReminders(completionHandler)
-            AnalyticsHelper.sharedHelper.logRemindersListViewed(true)
         }
     }
     

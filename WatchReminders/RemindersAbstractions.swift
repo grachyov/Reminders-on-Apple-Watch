@@ -54,18 +54,57 @@ class MessageManager {
         return message["CalendarID"] as! String
     }
     
-    class func replyRemindersMessage(titles: [String]) -> [String : AnyObject] {
-        return ["Type" : "RemindersReply", "Reminders" : titles]
+    class func replyRemindersMessage(reminders: [Reminder]) -> [String : AnyObject] {
+        let remindersDicts = reminders.map { (reminder) -> [String : AnyObject] in
+            if let date = reminder.dueDate {
+                return ["Title" : reminder.title, "Date" : date]
+            }
+            else {
+                return [ "Title" : reminder.title ]
+            }
+        }
+        return ["Type" : "RemindersReply", "Reminders" : remindersDicts]
     }
     
     class func remindersForReply(reply: [String : AnyObject]) -> [Reminder] {
-        return (reply["Reminders"] as! [String]).map({ (title) -> Reminder in
-            return Reminder(title: title)
-        })
+        guard let remindersDicts = reply["Reminders"] as? [[String : AnyObject]] else { return [] }
+        return remindersDicts.map { (reminderDict) -> Reminder in
+            return Reminder(title: reminderDict["Title"]! as! String, dueDate: reminderDict["Date"] as? NSDate)
+        }
     }
     
 }
 
+extension NSDate {
+    func prettyDescription() -> String {
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.timeStyle = .ShortStyle
+        if isToday() {
+            dateFormatter.dateStyle = .NoStyle
+            return "Today " + dateFormatter.stringFromDate(self)
+        }
+        else {
+            dateFormatter.dateStyle = .ShortStyle
+            return dateFormatter.stringFromDate(self)
+        }
+    }
+    
+    func isToday() -> Bool {
+        let calendar = NSCalendar.currentCalendar()
+        var components = calendar.components([.Era, .Year, .Month, .Day], fromDate:NSDate())
+        let today = calendar.dateFromComponents(components)!
+        components = calendar.components([.Era, .Year, .Month, .Day], fromDate:self)
+        let otherDate = calendar.dateFromComponents(components)!
+        if (today.isEqualToDate(otherDate)) {
+            return true
+        }
+        else {
+            return false
+        }
+    }
+}
+
 struct Reminder {
     let title: String
+    let dueDate: NSDate?
 }

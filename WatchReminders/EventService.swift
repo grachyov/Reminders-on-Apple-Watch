@@ -45,7 +45,13 @@ class EventService: NSObject {
         let predicate = store.predicateForIncompleteRemindersWithDueDateStarting(NSDate.distantPast(),
             ending: NSDate.distantFuture(),
             calendars: nil)
-        fetchRemindersWithPredicate(predicate, completionHandler: completionHandler)
+        fetchRemindersWithPredicate(predicate) { reminders in
+            let sortedReminders = reminders.sort({ (reminder1, reminder2) -> Bool in
+                guard let date1 = reminder1.dueDateComponents?.date, let date2 = reminder2.dueDateComponents?.date else { return false }
+                return date1.compare(date2) == .OrderedAscending
+            })
+            completionHandler(sortedReminders)
+        }
     }
     
     func fetchRemindersInCalendarWithID(calendarID: String, completionHandler:(([EKReminder]) -> Void)) {

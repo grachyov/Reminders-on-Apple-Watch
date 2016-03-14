@@ -13,6 +13,7 @@ import EventKit
 class ListRowController: NSObject {
 
     @IBOutlet var titleLabel: WKInterfaceLabel!
+    @IBOutlet var dueDateLabel: WKInterfaceLabel!
     
     func setupForScheduled() {
         titleLabel.setText("Scheduled")
@@ -26,5 +27,11 @@ class ListRowController: NSObject {
     
     func setupWithReminder(reminder: Reminder) {
         titleLabel.setText(reminder.title)
+        if let date = reminder.dueDate {
+            dueDateLabel.setText(date.prettyDescription())
+            if date.compare(NSDate()) == .OrderedAscending {
+                dueDateLabel.setTextColor(UIColor.redColor())
+            }
+        }
     }
 }
