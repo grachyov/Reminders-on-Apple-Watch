@@ -45,7 +45,7 @@
                                         <items>
                                             <label alignment="center" verticalAlignment="center" text="                                                                                 " textAlignment="center" numberOfLines="0" id="M7d-Mx-w7f"/>
                                             <label alignment="center" verticalAlignment="center" hidden="YES" text="Today" textAlignment="center" numberOfLines="0" id="9H6-jD-1is">
-                                                <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                                <fontDescription key="font" type="boldSystem" pointSize="14"/>
                                             </label>
                                             <label alignment="center" verticalAlignment="center" textAlignment="center" numberOfLines="0" id="m3E-St-YiL">
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
@@ -63,7 +63,7 @@
                                 </tableRow>
                             </items>
                         </table>
-                        <label width="0.90000000000000002" alignment="center" verticalAlignment="center" hidden="YES" text="No reminders" textAlignment="center" numberOfLines="2" id="09a-pE-tq8"/>
+                        <label width="0.90000000000000002" alignment="center" verticalAlignment="center" hidden="YES" text="Empty list" textAlignment="center" numberOfLines="0" id="09a-pE-tq8"/>
                     </items>
                     <connections>
                         <outlet property="remindersTable" destination="civ-Vb-lfb" id="ULB-0e-n9I"/>

@@ -82,7 +82,12 @@ extension NSDate {
         dateFormatter.timeStyle = withTime ? .ShortStyle : .NoStyle
         if isToday() {
             dateFormatter.dateStyle = .NoStyle
-            return "Today" + (withTime ? " " : "") + dateFormatter.stringFromDate(self)
+            if withDate {
+                return "Today" + (withTime ? " " : "") + dateFormatter.stringFromDate(self)
+            }
+            else {
+                return dateFormatter.stringFromDate(self)
+            }
         }
         else {
             return dateFormatter.stringFromDate(self)
