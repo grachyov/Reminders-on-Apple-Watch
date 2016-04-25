@@ -40,24 +40,9 @@ class InsideListInterfaceController: WKInterfaceController {
     
     func reloadWithReminders(reminders: [Reminder]) {
         self.displayedReminders = reminders
-        if self.scheduled {
-            let dateTitles = self.dateTitles()
-            self.remindersTable.setNumberOfRows(reminders.count + dateTitles.count, withRowType: "ListRow")
-            var reminderIndex = 0
-            for dateTitleIndex in 0..<dateTitles.count {
-                (self.remindersTable.rowControllerAtIndex(dateTitleIndex + reminderIndex) as! ListRowController).setupWithDateString(dateTitles[dateTitleIndex])
-                while reminders[reminderIndex].onlyDateString == dateTitles[dateTitleIndex] {
-                    (self.remindersTable.rowControllerAtIndex(dateTitleIndex + reminderIndex + 1) as! ListRowController).setupWithReminder(reminders[reminderIndex], fullDate: !scheduled)
-                    reminderIndex += 1
-                    if reminderIndex == reminders.count { return }
-                }
-            }
-        }
-        else {
-            self.remindersTable.setNumberOfRows(reminders.count, withRowType: "ListRow")
-            for i in 0..<reminders.count {
-                (self.remindersTable.rowControllerAtIndex(i) as! ListRowController).setupWithReminder(reminders[i], fullDate: !scheduled)
-            }
+        self.remindersTable.setNumberOfRows(reminders.count, withRowType: "ListRow")
+        for i in 0..<reminders.count {
+            (self.remindersTable.rowControllerAtIndex(i) as! ListRowController).setupWithReminder(reminders[i], fullDate: true)
         }
         if reminders.count == 0 {
             self.statusLabel.setHidden(false)
@@ -68,7 +53,7 @@ class InsideListInterfaceController: WKInterfaceController {
         guard let deletedIdentifier = notification.object as? String else { return }
         guard let index = displayedReminders.indexOf({ $0.identifier == deletedIdentifier }) else { return }
         displayedReminders.removeAtIndex(index)
-        remindersTable.removeRowsAtIndexes(NSIndexSet(index: index)) //do it smarter, with header
+        remindersTable.removeRowsAtIndexes(NSIndexSet(index: index))
     }
     
     override func table(table: WKInterfaceTable, didSelectRowAtIndex rowIndex: Int) {
