@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4EE0E9141CCECD6D001F14F7 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE0E9131CCECD6D001F14F7 /* ComplicationController.swift */; };
 		63F2ADE13E1F747351745129 /* Pods_WatchReminders.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04C3405AEB58D30570579ADA /* Pods_WatchReminders.framework */; };
 		AD0C891E1C98BEFB00FBAAF3 /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0C891D1C98BEFB00FBAAF3 /* Reminder.swift */; };
 		AD0C891F1C98BEFB00FBAAF3 /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0C891D1C98BEFB00FBAAF3 /* Reminder.swift */; };
@@ -82,6 +83,7 @@
 /* Begin PBXFileReference section */
 		04C3405AEB58D30570579ADA /* Pods_WatchReminders.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WatchReminders.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		45D02DDC71D45388C9D6E46A /* Pods-WatchReminders.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchReminders.release.xcconfig"; path = "Pods/Target Support Files/Pods-WatchReminders/Pods-WatchReminders.release.xcconfig"; sourceTree = "<group>"; };
+		4EE0E9131CCECD6D001F14F7 /* ComplicationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		7F5E05F3F42ACBEF38CE8636 /* Pods-WatchReminders.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchReminders.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WatchReminders/Pods-WatchReminders.debug.xcconfig"; sourceTree = "<group>"; };
 		AD0C891D1C98BEFB00FBAAF3 /* Reminder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
 		AD0C89211C98CEBE00FBAAF3 /* MessageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageManager.swift; sourceTree = "<group>"; };
@@ -211,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				ADE24FC41C8279C800D88930 /* ExtensionDelegate.swift */,
+				4EE0E9131CCECD6D001F14F7 /* ComplicationController.swift */,
 				ADBAF3A51C84AEB100868234 /* WCWatchManager.swift */,
 				ADE24FDA1C8295BA00D88930 /* InsideListInterfaceController.swift */,
 				ADE24FDC1C8295D500D88930 /* ReminderInterfaceController.swift */,
@@ -442,6 +445,7 @@
 				ADBAF3A61C84AEB100868234 /* WCWatchManager.swift in Sources */,
 				ADE24FD91C82887600D88930 /* ListRowController.swift in Sources */,
 				ADE24FDD1C8295D500D88930 /* ReminderInterfaceController.swift in Sources */,
+				4EE0E9141CCECD6D001F14F7 /* ComplicationController.swift in Sources */,
 				AD9C1A9B1C82FB0E00EB8759 /* Extensions.swift in Sources */,
 				ADE24FDB1C8295BA00D88930 /* InsideListInterfaceController.swift in Sources */,
 				ADD7F32D1C864B790023116E /* Constants.swift in Sources */,
