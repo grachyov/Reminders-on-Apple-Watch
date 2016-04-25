@@ -16,6 +16,16 @@ class ListRowController: NSObject {
     @IBOutlet var titleLabel: WKInterfaceLabel!
     @IBOutlet var dueDateLabel: WKInterfaceLabel!
     @IBOutlet var headerDateLabel: WKInterfaceLabel!
+    @IBOutlet var completionButton: WKInterfaceButton!
+
+    var reminder: Reminder?
+    var completionButtonHidden = true
+    
+    @IBAction func completionButtonTapped() {
+        if let reminder = reminder {
+            WCWatchManager.sharedManager.markAsCompletedReminderWithIdentifier(reminder.identifier)
+        }
+    }
     
     func setupForScheduled() {
         titleLabel.setText("Scheduled")
@@ -28,6 +38,7 @@ class ListRowController: NSObject {
     }
     
     func setupWithReminder(reminder: Reminder, fullDate: Bool) {
+        self.reminder = reminder
         titleLabel.setText(reminder.title)
         if let date = reminder.dueDate {
             if fullDate {
@@ -49,4 +60,12 @@ class ListRowController: NSObject {
         dueDateLabel.setHidden(true)
         titleLabel.setHidden(true)
     }
+    
+    func toggle() {
+        if let _ = reminder {
+            completionButton.setHidden(!completionButtonHidden)
+            completionButtonHidden = !completionButtonHidden
+        }
+    }
+    
 }

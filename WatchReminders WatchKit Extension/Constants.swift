@@ -10,4 +10,5 @@ import Foundation
 
 struct Constants {
     static let scheduledContextString = "Scheduled"
+    static let markedAsCompletedNotification = "MarkedAsCompleted"
 }

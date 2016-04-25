@@ -21,6 +21,7 @@ class InsideListInterfaceController: WKInterfaceController {
     var scheduled: Bool = false
     
     override func awakeWithContext(context: AnyObject?) {
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(InsideListInterfaceController.reminderMarkedAsCompleted(_:)), name: Constants.markedAsCompletedNotification, object: nil)
         if let calendar = context as? EKCalendar {
             self.calendar = calendar
             setTitle(calendar.title)
@@ -47,7 +48,7 @@ class InsideListInterfaceController: WKInterfaceController {
                 (self.remindersTable.rowControllerAtIndex(dateTitleIndex + reminderIndex) as! ListRowController).setupWithDateString(dateTitles[dateTitleIndex])
                 while reminders[reminderIndex].onlyDateString == dateTitles[dateTitleIndex] {
                     (self.remindersTable.rowControllerAtIndex(dateTitleIndex + reminderIndex + 1) as! ListRowController).setupWithReminder(reminders[reminderIndex], fullDate: !scheduled)
-                    reminderIndex++
+                    reminderIndex += 1
                     if reminderIndex == reminders.count { return }
                 }
             }
@@ -61,6 +62,17 @@ class InsideListInterfaceController: WKInterfaceController {
         if reminders.count == 0 {
             self.statusLabel.setHidden(false)
         }
+    }
+    
+    func reminderMarkedAsCompleted(notification: NSNotification) {
+        guard let deletedIdentifier = notification.object as? String else { return }
+        guard let index = displayedReminders.indexOf({ $0.identifier == deletedIdentifier }) else { return }
+        displayedReminders.removeAtIndex(index)
+        remindersTable.removeRowsAtIndexes(NSIndexSet(index: index)) //do it smarter, with header
+    }
+    
+    override func table(table: WKInterfaceTable, didSelectRowAtIndex rowIndex: Int) {
+        (table.rowControllerAtIndex(rowIndex) as? ListRowController)?.toggle()
     }
     
     func dateTitles() -> [String] {

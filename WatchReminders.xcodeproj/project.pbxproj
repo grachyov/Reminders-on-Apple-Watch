@@ -8,10 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		63F2ADE13E1F747351745129 /* Pods_WatchReminders.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04C3405AEB58D30570579ADA /* Pods_WatchReminders.framework */; };
+		AD0C891E1C98BEFB00FBAAF3 /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0C891D1C98BEFB00FBAAF3 /* Reminder.swift */; };
+		AD0C891F1C98BEFB00FBAAF3 /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0C891D1C98BEFB00FBAAF3 /* Reminder.swift */; };
+		AD0C89201C98CE3E00FBAAF3 /* EventService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9C1A961C82F72800EB8759 /* EventService.swift */; };
+		AD0C89221C98CEBE00FBAAF3 /* MessageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0C89211C98CEBE00FBAAF3 /* MessageManager.swift */; };
+		AD0C89231C98CEBE00FBAAF3 /* MessageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0C89211C98CEBE00FBAAF3 /* MessageManager.swift */; };
 		AD9C1A971C82F72800EB8759 /* EventService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9C1A961C82F72800EB8759 /* EventService.swift */; };
-		AD9C1A981C82F74000EB8759 /* EventService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9C1A961C82F72800EB8759 /* EventService.swift */; };
-		AD9C1A9A1C82FB0E00EB8759 /* RemindersAbstractions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9C1A991C82FB0E00EB8759 /* RemindersAbstractions.swift */; };
-		AD9C1A9B1C82FB0E00EB8759 /* RemindersAbstractions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9C1A991C82FB0E00EB8759 /* RemindersAbstractions.swift */; };
+		AD9C1A9A1C82FB0E00EB8759 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9C1A991C82FB0E00EB8759 /* Extensions.swift */; };
+		AD9C1A9B1C82FB0E00EB8759 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9C1A991C82FB0E00EB8759 /* Extensions.swift */; };
 		ADBAF3A41C84AE9000868234 /* WCIphoneManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBAF3A31C84AE9000868234 /* WCIphoneManager.swift */; };
 		ADBAF3A61C84AEB100868234 /* WCWatchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBAF3A51C84AEB100868234 /* WCWatchManager.swift */; };
 		ADD7F32D1C864B790023116E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD7F32C1C864B790023116E /* Constants.swift */; };
@@ -79,8 +83,10 @@
 		04C3405AEB58D30570579ADA /* Pods_WatchReminders.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WatchReminders.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		45D02DDC71D45388C9D6E46A /* Pods-WatchReminders.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchReminders.release.xcconfig"; path = "Pods/Target Support Files/Pods-WatchReminders/Pods-WatchReminders.release.xcconfig"; sourceTree = "<group>"; };
 		7F5E05F3F42ACBEF38CE8636 /* Pods-WatchReminders.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchReminders.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WatchReminders/Pods-WatchReminders.debug.xcconfig"; sourceTree = "<group>"; };
+		AD0C891D1C98BEFB00FBAAF3 /* Reminder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
+		AD0C89211C98CEBE00FBAAF3 /* MessageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageManager.swift; sourceTree = "<group>"; };
 		AD9C1A961C82F72800EB8759 /* EventService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventService.swift; sourceTree = "<group>"; };
-		AD9C1A991C82FB0E00EB8759 /* RemindersAbstractions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemindersAbstractions.swift; sourceTree = "<group>"; };
+		AD9C1A991C82FB0E00EB8759 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		ADBAF3A31C84AE9000868234 /* WCIphoneManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WCIphoneManager.swift; sourceTree = "<group>"; };
 		ADBAF3A51C84AEB100868234 /* WCWatchManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WCWatchManager.swift; sourceTree = "<group>"; };
 		ADD7F32C1C864B790023116E /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = "WatchReminders WatchKit Extension/Constants.swift"; sourceTree = SOURCE_ROOT; };
@@ -145,8 +151,10 @@
 			isa = PBXGroup;
 			children = (
 				ADD7F32C1C864B790023116E /* Constants.swift */,
+				AD9C1A991C82FB0E00EB8759 /* Extensions.swift */,
 				AD9C1A961C82F72800EB8759 /* EventService.swift */,
-				AD9C1A991C82FB0E00EB8759 /* RemindersAbstractions.swift */,
+				AD0C891D1C98BEFB00FBAAF3 /* Reminder.swift */,
+				AD0C89211C98CEBE00FBAAF3 /* MessageManager.swift */,
 			);
 			name = Common;
 			path = WatchReminders;
@@ -203,8 +211,8 @@
 			isa = PBXGroup;
 			children = (
 				ADE24FC41C8279C800D88930 /* ExtensionDelegate.swift */,
-				ADE24FDA1C8295BA00D88930 /* InsideListInterfaceController.swift */,
 				ADBAF3A51C84AEB100868234 /* WCWatchManager.swift */,
+				ADE24FDA1C8295BA00D88930 /* InsideListInterfaceController.swift */,
 				ADE24FDC1C8295D500D88930 /* ReminderInterfaceController.swift */,
 				ADE24FD61C82873600D88930 /* ListsInterfaceController.swift */,
 				ADE24FD81C82887600D88930 /* ListRowController.swift */,
@@ -286,15 +294,15 @@
 				TargetAttributes = {
 					ADE24F9B1C8279C800D88930 = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = 8DXC3N7E7P;
+						DevelopmentTeam = L8FU3DCA53;
 					};
 					ADE24FAD1C8279C800D88930 = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = 8DXC3N7E7P;
+						DevelopmentTeam = L8FU3DCA53;
 					};
 					ADE24FBC1C8279C800D88930 = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = 8DXC3N7E7P;
+						DevelopmentTeam = L8FU3DCA53;
 					};
 				};
 			};
@@ -415,11 +423,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADBAF3A41C84AE9000868234 /* WCIphoneManager.swift in Sources */,
-				AD9C1A9A1C82FB0E00EB8759 /* RemindersAbstractions.swift in Sources */,
+				AD0C891E1C98BEFB00FBAAF3 /* Reminder.swift in Sources */,
+				AD9C1A9A1C82FB0E00EB8759 /* Extensions.swift in Sources */,
 				AD9C1A971C82F72800EB8759 /* EventService.swift in Sources */,
 				ADE24FA21C8279C800D88930 /* ViewController.swift in Sources */,
 				ADE24FA01C8279C800D88930 /* AppDelegate.swift in Sources */,
 				ADD7F32E1C86569B0023116E /* Constants.swift in Sources */,
+				AD0C89221C98CEBE00FBAAF3 /* MessageManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,15 +437,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD9C1A981C82F74000EB8759 /* EventService.swift in Sources */,
 				ADE24FD71C82873600D88930 /* ListsInterfaceController.swift in Sources */,
 				ADE24FC51C8279C800D88930 /* ExtensionDelegate.swift in Sources */,
 				ADBAF3A61C84AEB100868234 /* WCWatchManager.swift in Sources */,
 				ADE24FD91C82887600D88930 /* ListRowController.swift in Sources */,
 				ADE24FDD1C8295D500D88930 /* ReminderInterfaceController.swift in Sources */,
-				AD9C1A9B1C82FB0E00EB8759 /* RemindersAbstractions.swift in Sources */,
+				AD9C1A9B1C82FB0E00EB8759 /* Extensions.swift in Sources */,
 				ADE24FDB1C8295BA00D88930 /* InsideListInterfaceController.swift in Sources */,
 				ADD7F32D1C864B790023116E /* Constants.swift in Sources */,
+				AD0C89201C98CE3E00FBAAF3 /* EventService.swift in Sources */,
+				AD0C891F1C98BEFB00FBAAF3 /* Reminder.swift in Sources */,
+				AD0C89231C98CEBE00FBAAF3 /* MessageManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -567,10 +579,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "WatchReminders WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.grachyov.RemindersOnWatch.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -582,10 +596,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "WatchReminders WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.grachyov.RemindersOnWatch.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -633,10 +649,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = WatchReminders/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.grachyov.RemindersOnWatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -646,10 +664,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = WatchReminders/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.grachyov.RemindersOnWatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
