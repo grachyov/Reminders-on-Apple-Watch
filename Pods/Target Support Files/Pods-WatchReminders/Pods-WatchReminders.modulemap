@@ -1,6 +1,0 @@
-framework module Pods_WatchReminders {
-  umbrella header "Pods-WatchReminders-umbrella.h"
-
-  export *
-  module * { export * }
-}

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		4EE0E9141CCECD6D001F14F7 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE0E9131CCECD6D001F14F7 /* ComplicationController.swift */; };
-		63F2ADE13E1F747351745129 /* Pods_WatchReminders.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04C3405AEB58D30570579ADA /* Pods_WatchReminders.framework */; };
 		AD0C891E1C98BEFB00FBAAF3 /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0C891D1C98BEFB00FBAAF3 /* Reminder.swift */; };
 		AD0C891F1C98BEFB00FBAAF3 /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0C891D1C98BEFB00FBAAF3 /* Reminder.swift */; };
 		AD0C89201C98CE3E00FBAAF3 /* EventService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9C1A961C82F72800EB8759 /* EventService.swift */; };
@@ -81,10 +80,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		04C3405AEB58D30570579ADA /* Pods_WatchReminders.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WatchReminders.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		45D02DDC71D45388C9D6E46A /* Pods-WatchReminders.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchReminders.release.xcconfig"; path = "Pods/Target Support Files/Pods-WatchReminders/Pods-WatchReminders.release.xcconfig"; sourceTree = "<group>"; };
 		4EE0E9131CCECD6D001F14F7 /* ComplicationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
-		7F5E05F3F42ACBEF38CE8636 /* Pods-WatchReminders.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchReminders.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WatchReminders/Pods-WatchReminders.debug.xcconfig"; sourceTree = "<group>"; };
 		AD0C891D1C98BEFB00FBAAF3 /* Reminder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
 		AD0C89211C98CEBE00FBAAF3 /* MessageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageManager.swift; sourceTree = "<group>"; };
 		AD9C1A961C82F72800EB8759 /* EventService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventService.swift; sourceTree = "<group>"; };
@@ -114,11 +110,17 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4577C0E1A8C2B58CE7249966 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		ADE24F991C8279C800D88930 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63F2ADE13E1F747351745129 /* Pods_WatchReminders.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,23 +134,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		36C05353618B64C00E4D70B5 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				04C3405AEB58D30570579ADA /* Pods_WatchReminders.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		A5668E60594E318EA24FF7BD /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				7F5E05F3F42ACBEF38CE8636 /* Pods-WatchReminders.debug.xcconfig */,
-				45D02DDC71D45388C9D6E46A /* Pods-WatchReminders.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		AD9C1A9C1C8300B400EB8759 /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -170,8 +155,6 @@
 				ADE24FB21C8279C800D88930 /* WatchReminders WatchKit App */,
 				ADE24FC11C8279C800D88930 /* WatchReminders WatchKit Extension */,
 				ADE24F9D1C8279C800D88930 /* Products */,
-				A5668E60594E318EA24FF7BD /* Pods */,
-				36C05353618B64C00E4D70B5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -232,14 +215,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ADE24FD31C8279C800D88930 /* Build configuration list for PBXNativeTarget "WatchReminders" */;
 			buildPhases = (
-				331D727B6FC0648812ACE0C0 /* Check Pods Manifest.lock */,
 				ADE24F981C8279C800D88930 /* Sources */,
 				ADE24F991C8279C800D88930 /* Frameworks */,
 				ADE24F9A1C8279C800D88930 /* Resources */,
 				ADE24FD21C8279C800D88930 /* Embed Watch Content */,
-				F5DD5D1201C0EE461F0158F1 /* Embed Pods Frameworks */,
-				53C1A49A6297128A91749B14 /* Copy Pods Resources */,
-				AD9452CB1C9364E000D98E0B /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -257,6 +236,7 @@
 			buildPhases = (
 				ADE24FAC1C8279C800D88930 /* Resources */,
 				ADE24FCE1C8279C800D88930 /* Embed App Extensions */,
+				4577C0E1A8C2B58CE7249966 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -358,67 +338,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		331D727B6FC0648812ACE0C0 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		53C1A49A6297128A91749B14 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WatchReminders/Pods-WatchReminders-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AD9452CB1C9364E000D98E0B /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Fabric/run\" 4cb88fa994426d0fbbc90be36d4db29ae3b660c2 727a76d3b12c0f4b1404d8501d75a55843fd37bc2c8f98a65de57a90f9915941";
-		};
-		F5DD5D1201C0EE461F0158F1 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WatchReminders/Pods-WatchReminders-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		ADE24F981C8279C800D88930 /* Sources */ = {
@@ -649,7 +568,6 @@
 		};
 		ADE24FD41C8279C800D88930 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7F5E05F3F42ACBEF38CE8636 /* Pods-WatchReminders.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -664,7 +582,6 @@
 		};
 		ADE24FD51C8279C800D88930 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 45D02DDC71D45388C9D6E46A /* Pods-WatchReminders.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
