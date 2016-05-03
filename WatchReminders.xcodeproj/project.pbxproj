@@ -277,15 +277,15 @@
 				TargetAttributes = {
 					ADE24F9B1C8279C800D88930 = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = L8FU3DCA53;
+						DevelopmentTeam = 8DXC3N7E7P;
 					};
 					ADE24FAD1C8279C800D88930 = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = L8FU3DCA53;
+						DevelopmentTeam = 8DXC3N7E7P;
 					};
 					ADE24FBC1C8279C800D88930 = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = L8FU3DCA53;
+						DevelopmentTeam = 8DXC3N7E7P;
 					};
 				};
 			};

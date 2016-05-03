@@ -59,10 +59,7 @@ class EventService: NSObject {
             requestAccess()
             return
         }
-        guard let calendar = EKEventStore().calendarWithIdentifier(calendarID) else {
-            //TODO:call failed completion handler
-            return
-        }
+        guard let calendar = EKEventStore().calendarWithIdentifier(calendarID) else { return }
         fetchRemindersInCalendar(calendar, completionHandler: completionHandler)
     }
     
